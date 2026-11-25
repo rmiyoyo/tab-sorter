@@ -13,6 +13,14 @@ npm run build
 
 Output goes to `dist/chrome` and `dist/firefox`.
 
+## Package for the stores
+
+```
+npm run package
+```
+
+This writes `packages/tab-sorter-chrome.zip` for the Chrome Web Store and `packages/tab-sorter-firefox.zip` for Firefox Add-ons. Run `npm run lint` after a build to check the Firefox version against Mozilla's rules. Firefox 142 or newer is required.
+
 ## Load locally
 
 - Chrome: open `chrome://extensions`, turn on Developer mode, click "Load unpacked", pick `dist/chrome`.

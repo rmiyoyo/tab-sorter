@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "tsc && node scripts/build.mjs"
+    "build": "tsc && node scripts/build.mjs",
+    "lint": "web-ext lint --source-dir dist/firefox",
+    "package": "npm run build && web-ext build --source-dir dist/chrome --artifacts-dir packages --filename tab-sorter-chrome.zip --overwrite-dest && web-ext build --source-dir dist/firefox --artifacts-dir packages --filename tab-sorter-firefox.zip --overwrite-dest"
   },
   "devDependencies": {
     "@types/chrome": "^0.3.8",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "web-ext": "^10.8.0"
   }
 }
