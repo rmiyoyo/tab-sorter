@@ -9,5 +9,12 @@
   },
   "action": {
     "default_title": "Sort tabs by site"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      }
+    }
   }
 }
