@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Sorter",
+  "version": "0.1.0",
+  "description": "Sort tabs alphabetically by site.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Sort tabs by site"
+  }
+}

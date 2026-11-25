@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Sorter",
+  "version": "0.1.0",
+  "description": "Sort tabs alphabetically by site.",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_title": "Sort tabs by site"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tab-sorter@rmiyoyo",
+      "strict_min_version": "109.0"
+    }
+  }
+}

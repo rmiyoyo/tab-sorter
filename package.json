@@ -1,0 +1,12 @@
+{
+  "name": "tab-sorter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc && node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.8",
+    "typescript": "^7.0.2"
+  }
+}
