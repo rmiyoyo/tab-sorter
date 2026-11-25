@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Tab Sorter",
-  "version": "0.1.0",
-  "description": "Sort tabs alphabetically by site.",
-  "permissions": ["tabs"],
+  "version": "0.2.0",
+  "description": "Sort tabs by site, title, web address or last use, on click or when the browser starts.",
+  "permissions": ["tabs", "storage", "contextMenus"],
   "icons": {
     "16": "icons/icon-16.png",
     "32": "icons/icon-32.png",
@@ -11,10 +11,14 @@
     "128": "icons/icon-128.png"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_ui": {
+    "page": "options.html"
   },
   "action": {
-    "default_title": "Sort tabs by site",
+    "default_title": "Sort tabs",
     "default_icon": {
       "16": "icons/icon-16.png",
       "32": "icons/icon-32.png"

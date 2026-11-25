@@ -1,6 +1,15 @@
 # Tab Sorter
 
-Browser extension for Chrome and Firefox that sorts the tabs in the current window alphabetically by site. Click the toolbar button or press Alt+Shift+S to sort. Pinned tabs stay where they are.
+Browser extension for Chrome and Firefox that sorts your tabs. Click the toolbar button or press Alt+Shift+S to sort. Pinned tabs stay where they are.
+
+## Sorting options
+
+- Sort by site, title, web address or last used
+- Ascending (A to Z, oldest first) or descending (Z to A, newest first)
+- Sort the current window or all windows
+- Sort all windows when the browser starts
+
+Right-click the toolbar button to pick a sort type and order. Picking one sorts straight away and becomes the default for the next click. All options are also on the extension's options page: in Chrome, right-click the button and choose "Options"; in Firefox, open `about:addons`, choose Tab Sorter, then the Options tab.
 
 To change the shortcut, open `chrome://extensions/shortcuts` in Chrome, or `about:addons` in Firefox and pick "Manage Extension Shortcuts" from the gear menu.
 
